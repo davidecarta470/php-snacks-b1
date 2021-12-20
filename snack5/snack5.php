@@ -17,7 +17,7 @@ var_dump($arrayDiFrasi);
   <ul>
     <?php
     for($i=0; $i<count($arrayDiFrasi); $i++){
-      echo '<li style="padding:30px 0px; >'.$arrayDiFrasi[$i].'</li>';
+      echo '<li style = "padding:10px 0px" >'.$arrayDiFrasi[$i].'</li>';
     }
     ?>
   </ul>
