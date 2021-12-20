@@ -2,17 +2,23 @@
 <?php
 // snack4
 // Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta
-function randomNumber($max,$min,$arrayLength){
-    $number = [];
+function getNumbers($max,$min,$arrayLength){
+    $numbers = [];
     $i=0;
-    
+    if($arrayLength>$max){
+      $arrayLength=$max;
+    }
     while($i<$arrayLength){
-      $number []= rand($max,$min);
-      $i++;
-    };
-    return $number;
+      $randomNumber = rand($max,$min) ;
+      if (!in_array($randomNumber,$numbers)){
+        $numbers[]=$randomNumber;
+        $i++;
+      }
+    }
+    return $numbers;
+
 }
-var_dump(randomNumber(4,5,10));
+var_dump(getNumbers(1030,1000,5));
 
 
 ?>
