@@ -50,5 +50,6 @@ $postskey = array_keys($posts) ;
   }
   ?>
   </ul>
+  
 </body>
 </html>
