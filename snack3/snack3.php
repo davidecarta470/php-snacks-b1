@@ -5,19 +5,24 @@ $posts = [
   "05-01-2007" =>[
                   "title" =>"post4",
                   "author" =>"utente1",
-                  "text" => "testo post4"
+                  "text" => "testo post5"
                 ],
   "04-01-2007" =>[
                   "title" =>"post3",
                   "author" =>"utente1",
-                  "text" => "testo post3"
+                  "text" => "testo post4"
                 ],
   "03-01-2007" =>[
                   "title" =>"post2",
                   "author" =>"utente1",
-                  "text" => "testo post2"
+                  "text" => "testo post3"
                 ],
   "02-01-2007" =>[
+                  "title" =>"post1",
+                  "author" =>"utente1",
+                  "text" => "testo post2"
+                ],
+  "01-01-2007" =>[
                   "title" =>"post1",
                   "author" =>"utente1",
                   "text" => "testo post1"
@@ -26,10 +31,6 @@ $posts = [
 
 $i = 0;
 $postskey = array_keys($posts) ;
-
-
-
-
 ?>
 
 
@@ -45,8 +46,8 @@ $postskey = array_keys($posts) ;
   <ul>
   <?php
   foreach($posts as $value){
-  echo '<li>'.$postskey[$i].'<br>  '.$value['text'].'</li>'.'<br> '.'<br>';
-  $i++;
+    echo '<li>'.$postskey[$i].'<br>'.$value['text'].'</li>'.'<br> '.'<br>';
+    $i++;
   }
   ?>
   </ul>
